@@ -26,6 +26,9 @@ log-facility {{ dhcp_global_log_facility }};
 {% if dhcp_global_booting is defined %}
 {{ dhcp_global_booting }} booting;
 {% endif %}
+{% if dhcp_global_client_updates is defined %}
+{{ dhcp_global_client_updates }} client-updates;
+{% endif %}
 {% if dhcp_global_next_server is defined %}
 next-server {{ dhcp_global_next_server}};
 {% endif %}
